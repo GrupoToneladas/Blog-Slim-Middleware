@@ -20,3 +20,11 @@ $container['view'] = function ($container) {
 $container[App\Action\HomeAction::class] = function ($container) {
     return new App\Action\HomeAction($container->get('view'));
 };
+
+$container[App\Action\AdminAction::class] = function ($container) {
+    return new App\Action\AdminAction($container->get('view'));
+};
+
+$container[App\Action\UsuariosAction::class] = function ($container) {
+    return new App\Action\UsuariosAction($container->get('view'));
+};
